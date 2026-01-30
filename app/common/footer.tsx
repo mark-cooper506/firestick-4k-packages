@@ -70,7 +70,7 @@ export default function Footer() {
                 <MessageCircle size={16} /> WhatsApp: +44 7857 099949
               </li>
               <li className="flex gap-2 items-center">
-                <Globe size={16} /> www.streamnova.tv
+                <Globe size={16} /> https://firestick-4k-packages-eight.vercel.app/
               </li>
             </ul>
           </div>
