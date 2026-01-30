@@ -95,7 +95,7 @@ export default function Navbar() {
           <Link href="/channels" className="block hover:text-yellow-300">
             Channels
           </Link>
-            <Link href="/pricing" className="hover:text-yellow-300 transition-colors">
+            <Link href="/pricing" className="block hover:text-yellow-300 transition-colors">
               Pricing
             </Link>
           <Link href="/about" className="block hover:text-yellow-300">
