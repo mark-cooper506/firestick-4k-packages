@@ -42,11 +42,19 @@ export default function WhatsAppFloat() {
     return () => clearTimeout(initialTimer);
   }, []);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (window.innerWidth < 640) {
-      e.preventDefault();
-      setShowText((prev) => !prev);
-    }
+  const handleMouseEnter = () => {
+    // Show text on hover
+    setShowText(true);
+  };
+
+  const handleMouseLeave = () => {
+    // Hide text when hover is removed
+    setShowText(false);
+  };
+
+  const handleTouchStart = () => {
+    // Toggle text on touch for mobile
+    setShowText((prev) => !prev);
   };
 
   return (
@@ -67,14 +75,16 @@ export default function WhatsAppFloat() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp Support"
-        onClick={handleClick}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
         className={`
           fixed bottom-20 z-50
           flex items-center gap-3
           bg-green-500 hover:bg-green-600
           text-white px-4 py-3 rounded-full
           shadow-xl
-          transition-all duration-2000ms ease-in-out
+          transition-all ease-in-out
           ${isVisible ? 'right-6 opacity-100' : '-right-full opacity-0'}
           ${shouldBlink ? 'slow-blink' : ''}
         `}
