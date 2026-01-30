@@ -80,13 +80,13 @@ export default function ContactPage() {
     icon: <MessageCircle />,
     title: "WhatsApp Support",
     text: "Fastest response time",
-    value: "+1 234 567 8900",
+    value: "+44 7857 099949",
   },
   {
     icon: <Mail />,
     title: "Email Support",
     text: "Reply within 24 hours",
-    value: "support@iptvservice.tv",
+    value: "joonk9637@gmail.com",
   },
 ].map((item, i) => (
   <div
