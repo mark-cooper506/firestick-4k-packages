@@ -14,12 +14,42 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           
-          {/* Brand */}
+          {/* Brand with Logo */}
           <div>
-            <h3 className="text-2xl font-extrabold text-yellow-400 mb-3">
-               FIRESTICK 4K & 8K PACKAGES
-            </h3>
-            <p className="text-sm leading-relaxed text-gray-400">
+            {/* Logo and Text in Rounded Border */}
+            <div className="inline-flex items-center bg-linear-to-r from-gray-800 to-gray-900 border-2 border-yellow-400 rounded-full px-4 py-2 shadow-lg hover:shadow-yellow-400/50 transition-all duration-300 mb-4">
+              {/* SVG Logo */}
+              <div className="mr-3">
+                <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="footerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor:"#FCD34D", stopOpacity:1}} />
+                      <stop offset="100%" style={{stopColor:"#F59E0B", stopOpacity:1}} />
+                    </linearGradient>
+                    <linearGradient id="footerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style={{stopColor:"#EF4444", stopOpacity:1}} />
+                      <stop offset="50%" style={{stopColor:"#F97316", stopOpacity:1}} />
+                      <stop offset="100%" style={{stopColor:"#FCD34D", stopOpacity:1}} />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="24" cy="24" r="23" fill="url(#footerGrad1)"/>
+                  <circle cx="24" cy="24" r="20" fill="#1F2937"/>
+                  <path d="M18 14L32 24L18 34V14Z" fill="url(#footerGrad2)"/>
+                  <text x="24" y="42" fontFamily="Arial, sans-serif" fontSize="8" fontWeight="bold" fill="#FCD34D" textAnchor="middle">4K</text>
+                  <path d="M38 20C38 18 37 16 35 15" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M40 18C40 15 38.5 12 36 10" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M10 20C10 18 11 16 13 15" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M8 18C8 15 9.5 12 12 10" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                </svg>
+              </div>
+
+              {/* Firestick 4K text */}
+              <h3 className="text-lg font-extrabold text-yellow-400 tracking-wide uppercase">
+                Firestick 4K
+              </h3>
+            </div>
+            
+            <p className="text-sm leading-relaxed text-gray-400 mt-3">
               Premium IPTV streaming service with 10,000+ channels and VOD
               content. Watch anywhere, anytime.
             </p>
@@ -70,7 +100,10 @@ export default function Footer() {
                 <MessageCircle size={16} /> WhatsApp: +44 7857 099949
               </li>
               <li className="flex gap-2 items-center">
-                <Globe size={16} /> https://firestick-4k-packages-eight.vercel.app/
+                <Globe size={16} />
+                <a href="https://firestick-4k-packages-eight.vercel.app/" >
+                visit our site now
+                </a>
               </li>
             </ul>
           </div>

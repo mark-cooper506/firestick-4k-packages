@@ -103,7 +103,7 @@ export default function HomePage() {
 
           {/* Right Hero Card */}
           <div className="flex-1 flex justify-center md:justify-end">
-            <div className="bg-gray-800 rounded-xl p-4 w-94 shadow-lg">
+            <div className="bg-gray-800 rounded-xl py-4 p-4 w-94 shadow-lg">
               <div className="flex justify-between items-center mb-2">
                 <div className="flex items-center gap-2">
                   <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
@@ -114,7 +114,7 @@ export default function HomePage() {
               <div className="flex items-center gap-3">
                 <div className="text-3xl">🎬</div>
                 <div>
-                  <h4 className="font-bold text-sm">Get Free Trial Now</h4>
+                  <h4 className="font-bold text-lg">Get Free Trial Now</h4>
                   <p className="text-xs text-gray-300">Fire STick 4k & 8k Packages</p>
                 </div>
               </div>

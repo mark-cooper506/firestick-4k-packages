@@ -96,11 +96,11 @@ export default function HomePage() {
           </div>
 
           {/* Load More Button */}
-          <div className="flex justify-center mt-8">
+          {/* <div className="flex justify-center mt-8">
             <button className="bg-gray-700 hover:bg-yellow-500 text-gray-300 hover:text-gray-900 px-6 py-2 rounded-full font-bold transition-all">
               Load More Channels
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
 
