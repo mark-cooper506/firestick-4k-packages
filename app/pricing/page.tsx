@@ -164,7 +164,7 @@ export default function Pricing() {
               <div key={i} className="bg-gray-800 p-6 rounded-xl flex flex-col items-center">
                 <div className="mb-2 text-yellow-400">{p.icon}</div>
                 <h4 className="text-yellow-400 font-bold mb-1">{p.title}</h4>
-                <p className="text-gray-300 text-sm">{p.desc}</p>
+                <p className="text-gray-300 text-sm">{p.desc}</p> 
               </div>
             ))}
           </div>
