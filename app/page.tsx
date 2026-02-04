@@ -125,7 +125,7 @@ const features = [
 
           {/* Right Hero Card */}
           <div className="flex-1 flex justify-center md:justify-end">
-            <div className="bg-gray-800 rounded-xl py-4 p-4 w-94 shadow-lg">
+            <div className="bg-gray-800 rounded-xl py-4 p-4 w-88 shadow-lg">
               <div className="flex justify-between items-center mb-2">
                 <div className="flex items-center gap-2">
                   <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
