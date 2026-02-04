@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Tv, Cpu, Apple, Box, Phone, Laptop2 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 export default function HomePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -70,7 +71,28 @@ export default function HomePage() {
     { icon: <Laptop2 size={48} className="text-yellow-400" />, title: "Windows", desc: "PC & Laptop" },
     { icon: <Box size={48} className="text-yellow-400" />, title: "MAG Box", desc: "Set-Top Boxes" },
   ];
-
+const features = [
+    {
+      icon: "📺",
+      title: "HD, 4K & 8K Streaming",
+      desc: "Crystal clear picture quality with support for HD, 4K and 8K content on all your favorite channels.",
+    },
+    {
+      icon: "⚡",
+      title: "99.9% Uptime",
+      desc: "Reliable streaming with guaranteed uptime ensuring you never miss your favorite shows.",
+    },
+    {
+      icon: "🏈",
+      title: "All Sports & Movies",
+      desc: "Access to all major sports events, latest movies, and TV shows from around the world.",
+    },
+    {
+      icon: "📱",
+      title: "Multi-Device Support",
+      desc: "Watch on any device - Smart TV, Android, iOS, Firestick, Windows, and more.",
+    },
+  ];
   return (
     <main className="bg-gray-900 text-white mt-15">
 
@@ -124,28 +146,48 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="features py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-yellow-400 mb-2">Why Choose Firestick 4k Packages?</h2>
-            <p className="text-gray-300">Experience the best IPTV service with premium features</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: "📺", title: "HD, 4K & 8k Streaming", desc: "Crystal clear picture quality with support for HD, 4k and 8K content on all your favorite channels." },
-              { icon: "⚡", title: "99.9% Uptime", desc: "Reliable streaming with guaranteed uptime ensuring you never miss your favorite shows." },
-              { icon: "🏈", title: "All Sports & Movies", desc: "Access to all major sports events, latest movies, and TV shows from around the world." },
-              { icon: "📱", title: "Multi-Device Support", desc: "Watch on any device - Smart TV, Android, iOS, Firestick, Windows, and more." },
-            ].map((f, i) => (
-              <div key={i} className="bg-gray-800 rounded-lg p-6 text-center">
-                <div className="text-4xl mb-4">{f.icon}</div>
-                <h3 className="font-bold text-xl mb-2">{f.title}</h3>
-                <p className="text-gray-300 text-sm">{f.desc}</p>
-              </div>
-            ))}
-          </div>
+       <section className="features py-16 overflow-hidden bg-black">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-extrabold text-yellow-400 mb-2">
+            Why Choose Firestick 4K Packages?
+          </h2>
+          <p className="text-gray-300">
+            Experience the best IPTV service with premium features
+          </p>
         </div>
-      </section>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((f, i) => (
+            <motion.div
+              key={i}
+              initial={{ x: 200, opacity: 0 }}          // right se start
+              whileInView={{ x: 0, opacity: 1 }}       // apni jagah
+              transition={{
+                duration: 1.2,
+                delay: i * 0.3,
+                ease: "easeOut",
+              }}
+              viewport={{
+                once: true,     // sirf ek dafa animate
+                amount: 0.3,    // 30% visible ho tab trigger
+              }}
+              className="bg-gray-800 rounded-xl p-6 text-center shadow-lg"
+            >
+              <div className="text-4xl mb-4">{f.icon}</div>
+              <h3 className="font-bold text-xl mb-2 text-white">
+                {f.title}
+              </h3>
+              <p className="text-gray-300 text-sm">
+                {f.desc}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
 
       {/* Supported Devices */}
    <section className="devices py-16 bg-[rgba(0,0,0,0.95)]">
@@ -157,7 +199,7 @@ export default function HomePage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
           {devices.map((d, i) => (
-            <div key={i} className="bg-gray-800 rounded-lg p-6 flex flex-col items-center justify-center">
+            <div key={i} className="bg-gray-800 rounded-lg p-6 flex flex-col items-center justify-center hover:scale-110 transition-transform">
               {d.icon}
               <h4 className="font-bold text-sm mt-2 mb-1">{d.title}</h4>
               <p className="text-gray-300 text-xs">{d.desc}</p>
@@ -181,7 +223,7 @@ export default function HomePage() {
         { title: "6 Months", price: "40", period: "/6 months", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","2 Months Free"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%206%20Months%20Plan", popular: true, affordable: false },
         { title: "1 Year", price: "65", period: "/year", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","4 Months Free"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%201%20Year%20Plan", popular: false, affordable: true },
       ].map((p, i) => (
-        <div key={i} className={`bg-gray-800 rounded-lg p-6 text-center ${p.popular || p.affordable ? "border-2 border-yellow-500" : ""}`}>
+        <div key={i} className={`bg-gray-800 rounded-lg p-6 text-center hover:scale-105 transition-transform ${p.popular || p.affordable ? "border-2 border-yellow-500" : ""}`}>
           {/* Badges */}
           <div className="mb-2">
             {p.popular && (
