@@ -12,11 +12,13 @@ import {
 
 export default function ContactPage() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-black text-white mt-15">
 
       {/* PAGE HEADER */}
       <section className="py-20 text-center border-b border-white/10">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
+        {/* <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
+        </h1> */}
+         <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
           Contact Us
         </h1>
         <p className="mt-4 text-gray-400">
