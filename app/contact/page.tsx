@@ -18,7 +18,7 @@ export default function ContactPage() {
       <section className="py-20 text-center border-b border-white/10">
         {/* <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
         </h1> */}
-         <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
           Contact Us
         </h1>
         <p className="mt-4 text-gray-400">
@@ -78,41 +78,41 @@ export default function ContactPage() {
           {/* CONTACT INFO */}
           <div className="space-y-8">
             {[
-  {
-    icon: <MessageCircle />,
-    title: "WhatsApp Support",
-    text: "Fastest response time",
-    value: "+44 7857 099949",
-  },
-  {
-    icon: <Mail />,
-    title: "Email Support",
-    text: "Reply within 24 hours",
-    value: "joonk9637@gmail.com",
-  },
-].map((item, i) => (
-  <div
-    key={i}
-    className="flex gap-4 items-start 
+              {
+                icon: <MessageCircle />,
+                title: "WhatsApp Support",
+                text: "Fastest response time",
+                value: "+44 7857 099949",
+              },
+              {
+                icon: <Mail />,
+                title: "Email Support",
+                text: "Reply within 24 hours",
+                value: "joonk9637@gmail.com",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex gap-4 items-start 
                border-2 border-yellow-400/60 
                rounded-xl p-6 
                hover:border-yellow-400 
                hover:bg-yellow-400/5 
                transition-all duration-300"
-  >
-    <div className="text-yellow-400 mt-1">
-      {item.icon}
-    </div>
+              >
+                <div className="text-yellow-400 mt-1">
+                  {item.icon}
+                </div>
 
-    <div>
-      <h4 className="font-bold text-lg">{item.title}</h4>
-      <p className="text-gray-400 text-sm">{item.text}</p>
-      <p className="text-yellow-400 mt-1 font-semibold">
-        {item.value}
-      </p>
-    </div>
-  </div>
-))}
+                <div>
+                  <h4 className="font-bold text-lg">{item.title}</h4>
+                  <p className="text-gray-400 text-sm">{item.text}</p>
+                  <p className="text-yellow-400 mt-1 font-semibold">
+                    {item.value}
+                  </p>
+                </div>
+              </div>
+            ))}
 
 
             {/* HOURS */}
@@ -172,6 +172,30 @@ export default function ContactPage() {
           </a>
         </div>
       </section>
+      {/* VISITOR STATS */}
+      <section className="py-20 bg-black border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+
+            <div className="border border-yellow-400/50 rounded-xl p-6">
+              <h3 className="text-3xl font-extrabold text-yellow-400">5K+</h3>
+              <p className="text-gray-400 mt-2">Monthly Visitors</p>
+            </div>
+
+            <div className="border border-yellow-400/50 rounded-xl p-6">
+              <h3 className="text-3xl font-extrabold text-yellow-400">20K+</h3>
+              <p className="text-gray-400 mt-2">Yearly Visits</p>
+            </div>
+
+            <div className="border border-yellow-400/50 rounded-xl p-6">
+              <h3 className="text-3xl font-extrabold text-yellow-400">Worldwide</h3>
+              <p className="text-gray-400 mt-2">Global Audience</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

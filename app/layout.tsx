@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Footer from "./common/footer";
 import Navbar from "./common/navbar";
 import "./globals.css";
@@ -16,6 +17,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+           {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JZ60HEPGHW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JZ60HEPGHW');
+          `}
+        </Script>
       <body suppressHydrationWarning className="bg-black text-white">
         <Navbar />
         {children}
