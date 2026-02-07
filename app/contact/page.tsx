@@ -156,7 +156,7 @@ export default function ContactPage() {
           Ready to Start Watching?
         </h2>
         <p className="text-gray-400 mt-3">
-          Join thousands enjoying premium IPTV service
+          Join thousands enjoying premium !pt¥ service
         </p>
 
         <div className="flex justify-center gap-4 mt-8">

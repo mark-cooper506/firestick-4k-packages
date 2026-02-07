@@ -18,7 +18,7 @@ export default function Pricing() {
         "24/7 Customer Support",
         "Instant Activation",
       ],
-      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%201%20Month%20Plan",
+      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%!pt¥%201%20Month%20Plan",
       popular: false,
     },
     {
@@ -36,7 +36,7 @@ export default function Pricing() {
         "Catch-up TV (7 Days)",
         "Multi-Room Access",
       ],
-      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%203%20Months%20Plan",
+      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%!pt¥%203%20Months%20Plan",
       popular: false,
     },
     {
@@ -55,7 +55,7 @@ export default function Pricing() {
         "Exclusive Content Access",
         "2 Months Free",
       ],
-      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%206%20Months%20Plan",
+      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%!pt¥%206%20Months%20Plan",
       popular: true,
     },
     {
@@ -74,7 +74,7 @@ export default function Pricing() {
         "Exclusive Content Access",
         "4 Months Free",
       ],
-      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%201%20Year%20Plan",
+      link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%!pt¥%201%20Year%20Plan",
       popular: false,
       affordable: true,
     },
@@ -98,7 +98,7 @@ export default function Pricing() {
             Choose Your Perfect Plan
           </h1>
           <p className="text-gray-300 text-lg md:text-xl">
-            Affordable pricing for premium IPTV service with no hidden fees
+            Affordable pricing for premium !pt¥ service with no hidden fees
           </p>
         </div>
       </section>

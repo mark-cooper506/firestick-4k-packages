@@ -28,7 +28,7 @@ export default function Features() {
       {/* PAGE HEADER */}
       <section className="py-20 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
-          Premium IPTV Features
+          Premium !pt¥ Features
         </h1>
         <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
           Experience the ultimate entertainment with cutting-edge streaming
@@ -208,7 +208,7 @@ export default function Features() {
       {/* CTA */}
       <section className="py-20 text-center border-t border-white/10">
         <h2 className="text-3xl md:text-4xl font-extrabold text-yellow-400">
-          Experience Premium IPTV Today
+          Experience Premium !pt¥ Today
         </h2>
         <p className="text-gray-400 mt-4">
           Get instant access to all features with affordable plans

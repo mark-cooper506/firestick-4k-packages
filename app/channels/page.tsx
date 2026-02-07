@@ -109,7 +109,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-4">Ready to Start Watching?</h2>
           <p className="text-lg md:text-xl mb-8">
-            Get instant access to 10,000+ channels with our premium IPTV service
+            Get instant access to 10,000+ channels with our premium !pt¥ service
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a

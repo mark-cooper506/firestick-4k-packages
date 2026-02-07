@@ -4,9 +4,9 @@ import "./globals.css";
 import WhatsAppFloat from "./WhatsAppFloat/page";
 
 export const metadata = {
-  title: "Firestick 4K IPTV Packages | Best Streaming Deals",
+  title: "Firestick 4K !pt¥ Packages | Best Streaming Deals",
   description:
-    "Get affordable Firestick 4K IPTV packages with live TV, movies, and sports. Easy setup and fast streaming.",
+    "Get affordable Firestick 4K !pt¥ packages with live TV, movies, and sports. Easy setup and fast streaming.",
 };
 
 export default function RootLayout({

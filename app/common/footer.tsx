@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
             
             <p className="text-sm leading-relaxed text-gray-400 mt-3">
-              Premium IPTV streaming service with 10,000+ channels and VOD
+              Premium !pt¥ streaming service with 10,000+ channels and VOD
               content. Watch anywhere, anytime.
             </p>
 
@@ -111,7 +111,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Firestick 4k IPTV. All rights reserved.
+          © {new Date().getFullYear()} Firestick 4k !pt¥. All rights reserved.
         </div>
       </div>
     </footer>

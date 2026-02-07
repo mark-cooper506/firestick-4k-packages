@@ -12,7 +12,7 @@ export default function HomePage() {
     {
       id: 1,
       rating: 5,
-      text: "FireStick 4k & 8k packages is absolutely incredible! The streaming quality is unmatched with true 4K and 8K support. I can watch all my favorite sports events and movies without any lag or buffering. The setup was super easy and customer support responded within minutes. This is hands down the best IPTV service I've tried!",
+      text: "FireStick 4k & 8k packages is absolutely incredible! The streaming quality is unmatched with true 4K and 8K support. I can watch all my favorite sports events and movies without any lag or buffering. The setup was super easy and customer support responded within minutes. This is hands down the best !pt¥ service I've tried!",
       name: "Michael Johnson",
       initials: "MJ"
     },
@@ -47,7 +47,7 @@ export default function HomePage() {
      {
       id: 6,
       rating: 5,
-      text: "FireStick 4k & 8k packages is simply the best! I've tried many IPTV services before, but none come close to this quality. The streaming is buttery smooth in 4K, all my favorite channels are available, and the customer support team is always ready to help. Installation took just a few minutes. I'm a customer for life!",
+      text: "FireStick 4k & 8k packages is simply the best! I've tried many !pt¥ services before, but none come close to this quality. The streaming is buttery smooth in 4K, all my favorite channels are available, and the customer support team is always ready to help. Installation took just a few minutes. I'm a customer for life!",
       name: "John Daniel",
       initials: "JD"
     }
@@ -102,7 +102,7 @@ const features = [
           {/* Left Content */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl md:text-5xl font-extrabold text-yellow-400 mb-4">
-              Premium IPTV Streaming 10,000+ Channels & VOD
+              Premium !pt¥ Streaming 10,000+ Channels & VOD
             </h1>
             <p className="text-gray-200 mb-6">
               Experience the ultimate entertainment with HD, 4K & 8k quality streaming, 99.9% uptime, and access to all sports, movies, and TV shows.
@@ -154,7 +154,7 @@ const features = [
             Why Choose Firestick 4K Packages?
           </h2>
           <p className="text-gray-300">
-            Experience the best IPTV service with premium features
+            Experience the best !pt¥ service with premium features
           </p>
         </div>
 
@@ -214,14 +214,14 @@ const features = [
   <div className="max-w-7xl mx-auto px-4">
     <div className="text-center mb-12">
       <h2 className="text-3xl font-extrabold text-yellow-400 mb-2">Choose Your Plan</h2>
-      <p className="text-gray-300">Affordable pricing for premium IPTV service</p>
+      <p className="text-gray-300">Affordable pricing for premium !pt¥ service</p>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {[
-        { title: "1 Month", price: "15", period: "/month", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","Priority Support"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%201%20Month%20Plan", popular: false, affordable: false },
-        { title: "3 Months", price: "25", period: "/3 months", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","Priority Support"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%203%20Months%20Plan", popular: false, affordable: false },
-        { title: "6 Months", price: "40", period: "/6 months", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","2 Months Free"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%206%20Months%20Plan", popular: true, affordable: false },
-        { title: "1 Year", price: "65", period: "/year", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","4 Months Free"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20IPTV%201%20Year%20Plan", popular: false, affordable: true },
+        { title: "1 Month", price: "15", period: "/month", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","Priority Support"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20!pt¥%201%20Month%20Plan", popular: false, affordable: false },
+        { title: "3 Months", price: "25", period: "/3 months", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","Priority Support"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20!pt¥%203%20Months%20Plan", popular: false, affordable: false },
+        { title: "6 Months", price: "40", period: "/6 months", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","2 Months Free"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20!pt¥%206%20Months%20Plan", popular: true, affordable: false },
+        { title: "1 Year", price: "65", period: "/year", features: ["10,000+ Channels","HD, 4K & 8k Quality","VOD Library","Multi-Device","24/7 Support","4 Months Free"], link: "https://wa.me/+447857099949?text=I%20want%20to%20order%20Subscription%20!pt¥%201%20Year%20Plan", popular: false, affordable: true },
       ].map((p, i) => (
         <div key={i} className={`bg-gray-800 rounded-lg p-6 text-center hover:scale-105 transition-transform ${p.popular || p.affordable ? "border-2 border-yellow-500" : ""}`}>
           {/* Badges */}
