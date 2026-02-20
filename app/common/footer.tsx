@@ -101,7 +101,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-2 items-center">
                 <Globe size={16} />
-                <a href="https://firestick-4k-packages.vercel.app/" >
+                <a href="https://firestick-tv-packages.vercel.app/" >
                 visit our site now
                 </a>
               </li>
